@@ -1,3 +1,4 @@
+import 'package:fixing/features/carts_order/screen/carts.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,24 +11,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'flutter_fiverly',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
+      home: Carts(),
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }
