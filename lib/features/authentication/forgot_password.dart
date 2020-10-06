@@ -95,7 +95,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         'Send',
                         style: buttonColor,
                       ),
-                    )
+                    ),
                   ),
                 ],
               ),
