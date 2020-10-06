@@ -1,5 +1,6 @@
 import 'package:fixing/features/carts_order/screen/carts.dart';
 import 'package:flutter/material.dart';
+import 'package:fixing/features/authentication/sign_up.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,10 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Carts(),
+      home: Scaffold(  
+        backgroundColor: Color(0xffe5e5e5),
+        body: SignUp(),
+      ),
     );
   }
 }
