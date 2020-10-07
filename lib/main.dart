@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:fixing/features/authentication/sign_up.dart';
 import 'features/authentication/forgot_password.dart';
 import 'features/authentication/login.dart';
+import 'package:fixing/features/successpages/success1.dart';
 
+import 'features/successpages/success2.dart';
 void main() {
   runApp(MyApp());
 }
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(  
         backgroundColor: Color(0xffe5e5e5),
-        body:ForgotPassword(),
+        body:SuccessPage2(),
       ),
     );
   }
