@@ -1,7 +1,7 @@
 import 'package:fiverly_flutter/cores/util/config.dart';
 import 'package:fiverly_flutter/cores/util/screen_change.dart';
 import 'package:fiverly_flutter/cores/util/style.dart';
-import 'package:fiverly_flutter/features/shipping_details/screen/shipping_address.dart';
+import 'package:fiverly_flutter/features/shipping_details/screen/my_profile.dart';
 import 'package:flutter/material.dart';
 
 class AddShippingAddress extends StatelessWidget {
@@ -98,7 +98,7 @@ class AddShippingAddress extends StatelessWidget {
                   ),
                 ),
                 GestureDetector(
-                  onTap: () => changeScreen(context, ShippingAddress()),
+                  onTap: () => changeScreen(context, UserProfile()),
                   child: Container(
                     height: Config.yMargin(context, height: 10),
                     decoration: BoxDecoration(
