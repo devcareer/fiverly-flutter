@@ -1,7 +1,5 @@
 //==========================================================================
 
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -28,6 +26,7 @@ class Auraad extends StatefulWidget {
 
 class _AuraadState extends State<Auraad> {
   Timer _timer;
+
   var timerCounter;
   var msfcounter1 = 5;
   var msfcounter2 = 20;
@@ -36,10 +35,15 @@ class _AuraadState extends State<Auraad> {
   var counter2 = 20;
   var counter3 = 20;
   var counter4 = 20;
-  int _start = 10;
+
+  var i = 0;
   countdown(Timer timer) {
     if (msfcounter1 < 1) {
-      timer.cancel();
+      // timer.cancel();
+     
+      setState(() {
+        i++;
+      });
     } else {
       msfcounter1 = msfcounter1 - 1;
       print(msfcounter1);
@@ -50,35 +54,35 @@ class _AuraadState extends State<Auraad> {
     await countdown(timer);
   }
 
-  void startTimer() {
-    const oneSec = const Duration(seconds: 1);
-    _timer = new Timer.periodic(
-      oneSec,
-      (Timer timer) => setState(
-        () {
-          var i = 0;
-          switch (i) {
-            case 0:
-              countdown(timer);
-              break;
-            case 1:
-              if (msfcounter2 < 1) {
-                timer.cancel();
-                i++;
-                print(i);
-              } else {
-                msfcounter2 = msfcounter2 - 1;
-                print(msfcounter2);
-              }
-              break;
-          }
-        },
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
+    void startTimer() {
+      const oneSec = const Duration(seconds: 1);
+      _timer = new Timer.periodic(
+        oneSec,
+        (Timer timer) => setState(
+          () {
+            switch (i) {
+              case 0:
+                counting(timer);
+                break;
+              case 1:
+                if (msfcounter2 < 1) {
+                  timer.cancel();
+                  i++;
+                  print(i);
+                } else {
+                  msfcounter2 = msfcounter2 - 1;
+                  print(msfcounter2);
+                }
+
+                break;
+            }
+          },
+        ),
+      );
+    }
+
     return SafeArea(
         child: Scaffold(
             appBar: AppBar(
@@ -86,7 +90,6 @@ class _AuraadState extends State<Auraad> {
                 toolbarHeight: 30,
                 title: Text('${widget.ptitle}')),
             body: Flex(direction: Axis.vertical, children: [
-              Text("$_start"),
               mSf(msfcounter1, msfcounter2),
               pTt(panj: widget.panj, counter: counterPt),
               pGq(
@@ -104,7 +107,6 @@ class _AuraadState extends State<Auraad> {
                             color: Colors.green,
                             onPressed: () {
                               startTimer();
-                              print(_start);
                             },
                             child: Text('Count'))),
                   ])),
