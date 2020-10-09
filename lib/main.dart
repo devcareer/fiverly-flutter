@@ -1,50 +1,32 @@
-import 'package:fiverly_flutter/features/carts_order/screen/carts.dart';
+
+import 'package:fixing/features/global/app_color.dart';
+import 'package:fixing/features/global/bottom_navigation/screen/bottom_navigation_bar.dart';
+import 'package:fixing/features/main/main_page.dart';
+import 'package:fixing/features/shipping/screen/shipping_screen.dart';
+import 'package:fixing/features/shipping/screen/widget/shipping.dart';
 import 'package:flutter/material.dart';
 
-import 'package:flutter_bloc/flutter_bloc.dart';
-//import 'features/successpages/success2.dart';
-
-
-import 'features/shipping_details/bloc/my_order_counter_bloc.dart';
-import 'package:fixing/features/authentication/sign_up.dart';
-import 'features/authentication/forgot_password.dart';
-import 'features/authentication/login.dart';
-import 'package:fixing/features/successpages/success1.dart';
-import 'package:fixing/features/searchpages/virtual_search.dart';
-import 'features/successpages/success2.dart';
-import 'package:fixing/features/searchpages/taking_photo.dart';
-import 'package:fixing/features/searchpages/virtualsearchfinding.dart';
-
-
-void main() async {
-  runApp(MultiBlocProvider(
-    providers: [
-      BlocProvider<MyOrderCounterBloc>(
-        create: (context) => MyOrderCounterBloc(),
-      ),
-    ],
-    child: MyApp(),
-  ));
+import 'features/global/test_function.dart';
 
 
 
-
-
-
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'flutter_fiverly',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.white,
+        primaryColor: AppColor.primaryColor,
+        accentColor: AppColor.backgroundColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(  
-        backgroundColor: Color(0xffe5e5e5),
-        body:SearchFinding(),
-      ),
+      home: BottomNavBarApp(),
+
     );
   }
 }
