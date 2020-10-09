@@ -10,9 +10,15 @@ import 'features/global/test_function.dart';
 
 
 
-void main() {
-  runApp(MyApp());
-}
+void main() async {
+  runApp(MultiBlocProvider(
+    providers: [
+      BlocProvider<MyOrderCounterBloc>(
+        create: (context) => MyOrderCounterBloc(),
+      ),
+    ],
+    child: MyApp(),
+  ));
 
 class MyApp extends StatelessWidget {
   @override
