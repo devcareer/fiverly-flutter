@@ -1,4 +1,6 @@
 import 'package:fixing/features/global/app_color.dart';
+import 'package:fixing/features/global/bottom_navigation/screen/bottom_navigation_bar.dart';
+import 'package:fixing/features/main/main_page.dart';
 import 'package:fixing/features/shipping/screen/shipping_screen.dart';
 import 'package:fixing/features/shipping/screen/widget/shipping.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         accentColor: AppColor.backgroundColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Shipping(),
+      home: BottomNavBarApp(),
     );
   }
 }

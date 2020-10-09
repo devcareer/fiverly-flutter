@@ -1,5 +1,8 @@
 import 'package:fixing/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
+import 'package:fixing/features/main/main_page.dart';
 import 'package:flutter/material.dart';
+
+import '../../app_color.dart';
 
 class BottomNavBarApp extends StatefulWidget {
   createState() => _BottomNavBarAppState();
@@ -23,16 +26,14 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Bottom NavBar Navigation'),
-      ),
+      
       body: StreamBuilder<NavBarItem>(
         stream: _bottomNavBarBloc.itemStream,
         initialData: _bottomNavBarBloc.defaultItem,
         builder: (BuildContext context, AsyncSnapshot<NavBarItem> snapshot) {
           switch (snapshot.data) {
             case NavBarItem.HOME:
-              return _homeArea();
+              return MainPage();
             case NavBarItem.BAG:
               return _alertArea();
             case NavBarItem.FAVORITES:
@@ -49,19 +50,29 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
         initialData: _bottomNavBarBloc.defaultItem,
         builder: (BuildContext context, AsyncSnapshot<NavBarItem> snapshot) {
           return BottomNavigationBar(
-            fixedColor: Colors.blueAccent,
+            // fixedColor: Colors.blueAccent,
             currentIndex: snapshot.data.index,
             onTap: _bottomNavBarBloc.pickItem,
+            selectedItemColor: AppColor.primaryColor,
+            unselectedItemColor: Colors.grey,
             items: [
               BottomNavigationBarItem(
                 label: 'Home',
                 icon: Icon(Icons.home),
               ),
               BottomNavigationBarItem(
-                label: 'Notifications',
-                icon: Icon(Icons.notifications),
+                label: 'Shop',
+                icon: Icon(Icons.shopping_cart)
               ),
               BottomNavigationBarItem(
+                label: 'Settings',
+                icon: Icon(Icons.settings),
+              ),
+               BottomNavigationBarItem(
+                label: 'Settings',
+                icon: Icon(Icons.settings),
+              ),
+               BottomNavigationBarItem(
                 label: 'Settings',
                 icon: Icon(Icons.settings),
               ),

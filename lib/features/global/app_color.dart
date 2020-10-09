@@ -5,4 +5,6 @@ class AppColor {
   static Color primaryColor = Color(0xffDB3022);
   static Color sucessColor = Color(0xff2AA952);
   static Color errorColor = Color(0xffF01F0E);
+  static Color cardBackgroundColor = Color(0xffF3F1EF);
+  static Color yellowish = Color(0xffFFBA49);
 }
