@@ -1,8 +1,7 @@
-import 'package:fixing/features/global/app_color.dart';
-import 'package:fixing/features/global/screen_app_bar.dart';
-import 'package:fixing/features/global/text_style.dart';
-import 'package:fixing/features/global/ui_helper.dart';
-import 'package:fixing/features/global/widget_design.dart';
+import 'package:fiverly_flutter/features/global/app_color.dart';
+import 'package:fiverly_flutter/features/global/screen_app_bar.dart';
+import 'package:fiverly_flutter/features/global/text_style.dart';
+import 'package:fiverly_flutter/features/global/widget_design.dart';
 import 'package:flutter/material.dart';
 
 class AddShippingAddress extends StatelessWidget {
@@ -11,14 +10,14 @@ class AddShippingAddress extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.backgroundColor,
       appBar: screenAppBar(
-         screenIcon: Icon(
+          screenIcon: Icon(
             Icons.chevron_left,
             color: Colors.black,
           ),
           screenTitle: Text(
-        "Adding Shipping Address",
-        style: kTitleStyle,
-      )),
+            "Adding Shipping Address",
+            style: kTitleStyle,
+          )),
       body: SingleChildScrollView(
         child: Container(
             color: AppColor.backgroundColor,
@@ -53,6 +52,4 @@ class AddShippingAddress extends StatelessWidget {
       ),
     );
   }
-
- 
 }

@@ -14,13 +14,30 @@ class _PromoInputCodeState extends State<PromoInputCode> {
       controller.text = "mypromocode2020";
     });
     showModalBottomSheet(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(
+              Config.xMargin(context, width: 10),
+            ),
+            topRight: Radius.circular(
+              Config.xMargin(context, width: 10),
+            ),
+          ),
+        ),
         context: context,
         builder: (ccontext) {
           return Container(
             decoration: BoxDecoration(
-                color: Color(0xffE5E5E5),
-                borderRadius:
-                    BorderRadius.circular(Config.xMargin(context, width: 15))),
+              color: Color(0xffE5E5E5),
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(
+                  Config.xMargin(context, width: 10),
+                ),
+                topRight: Radius.circular(
+                  Config.xMargin(context, width: 10),
+                ),
+              ),
+            ),
             child: SingleChildScrollView(child: ShowBottomPromo()),
           );
         });
@@ -199,6 +216,17 @@ class ShowBottomPromo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        SizedBox(height: Config.yMargin(context, height: 5)),
+        Center(
+          child: Container(
+            width: Config.xMargin(context, width: 20),
+            height: Config.yMargin(context, height: 1.5),
+            decoration: BoxDecoration(
+                color: Color(0xff9B9B9B),
+                borderRadius:
+                    BorderRadius.circular(Config.xMargin(context, width: 2.5))),
+          ),
+        ),
         SizedBox(height: Config.yMargin(context, height: 5)),
         Container(
           padding: EdgeInsets.symmetric(
