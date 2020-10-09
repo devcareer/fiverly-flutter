@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import '../authentication/sharedresources/shared.dart';
 
-
-
-
-
 class SuccessPage2 extends StatefulWidget {
   @override
   _SuccessPage2State createState() => _SuccessPage2State();

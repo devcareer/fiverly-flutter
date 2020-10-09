@@ -48,8 +48,30 @@ var buttonColor = TextStyle(
   color: Colors.white,
 );
 
-/*var containerImage = BoxDecoration(
-    color: Colors.yellow[900],
-        );
- */
+var virtualsearchFonts = GoogleFonts.roboto(
+  fontSize: 18.0,
+);
 
+var virtualImage = BoxDecoration(
+  image: DecorationImage(
+      image: AssetImage("images/virtualSearch.png"), fit: BoxFit.cover),
+);
+var virtualTxetFont = GoogleFonts.roboto(
+  fontSize: 24.0,
+  color: Colors.white,
+);
+
+var uploadDecoration = BoxDecoration(
+  borderRadius: BorderRadius.circular(25.0),
+  color: Colors.transparent,
+  border: Border.all(color: Colors.white)
+);
+var takingPhoto = BoxDecoration(
+  image: DecorationImage(
+      image: AssetImage("images/takingphoto.png"), fit: BoxFit.cover),
+);
+
+var cameraContainer = BoxDecoration(
+  borderRadius: BorderRadius.circular(50.0),
+  color: Color(0xffdb3022),
+);
