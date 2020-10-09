@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fixing/features/authentication/sharedresources/shared.dart';
 import 'sharedresources/shared.dart';
 
 class ForgotPassword extends StatefulWidget {
@@ -8,7 +7,6 @@ class ForgotPassword extends StatefulWidget {
 }
 
 class _ForgotPasswordState extends State<ForgotPassword> {
-
   final _formKey = GlobalKey<FormState>();
   String email = '';
   String error = '';
@@ -75,8 +73,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       decoration: textInputDecorations.copyWith(
                         hintText: 'Email',
                       ),
-                      validator: (value) =>
-                      value.isEmpty ? "Not valid email.Should your@email.com" : null,
+                      validator: (value) => value.isEmpty
+                          ? "Not valid email.Should your@email.com"
+                          : null,
                       onChanged: (value) {
                         setState(() => email = value);
                       },
@@ -91,7 +90,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     decoration: buttonDecoration,
                     child: FlatButton(
                       onPressed: () {},
-                     child:  Text(
+                      child: Text(
                         'Send',
                         style: buttonColor,
                       ),
