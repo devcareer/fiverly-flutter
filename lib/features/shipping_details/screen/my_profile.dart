@@ -5,7 +5,6 @@ import 'package:fiverly_flutter/features/shipping_details/components/my_profile_
 import 'package:flutter/material.dart';
 
 class UserProfile extends StatelessWidget {
-  final listDetails = List.generate(6, (index) => index);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
