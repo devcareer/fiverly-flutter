@@ -36,6 +36,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -46,6 +49,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -58,6 +64,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -68,6 +77,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -98,6 +110,7 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
           GestureDetector(
             onTap: () => changeScreen(context, ShippingAddress()),
             child: Container(
+              width: Config.xMargin(context, width: 84),
               height: Config.yMargin(context, height: 10),
               decoration: BoxDecoration(
                 color: Colors.red,
