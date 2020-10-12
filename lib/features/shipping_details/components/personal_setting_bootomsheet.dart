@@ -1,7 +1,7 @@
 import 'package:fiverly_flutter/cores/util/config.dart';
 import 'package:fiverly_flutter/cores/util/screen_change.dart';
 import 'package:fiverly_flutter/cores/util/style.dart';
-import 'package:fiverly_flutter/features/shipping_details/screen/shipping_address.dart';
+import 'package:fiverly_flutter/features/reviews_rating/screen/rating_reviews.dart';
 import 'package:flutter/material.dart';
 
 class PersonalSettingBottomSheet extends StatefulWidget {
@@ -88,7 +88,7 @@ class _PersonalSettingBottomSheetState
                   ),
                 ),
                 GestureDetector(
-                  onTap: () => changeScreen(context, ShippingAddress()),
+                  onTap: () => changeScreen(context, RatingReviews()),
                   child: Container(
                     height: Config.yMargin(context, height: 10),
                     decoration: BoxDecoration(

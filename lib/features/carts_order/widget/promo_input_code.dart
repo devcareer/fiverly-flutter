@@ -50,9 +50,10 @@ class _PromoInputCodeState extends State<PromoInputCode> {
       child: Column(
         children: [
           Container(
+            width: Config.xMargin(context, width: 84),
             child: Row(children: [
               Container(
-                width: Config.xMargin(context, width: 80),
+                width: Config.xMargin(context, width: 70),
                 color: Colors.white,
                 child: Padding(
                   padding: const EdgeInsets.all(6),
@@ -103,6 +104,7 @@ class _BottomSheetPromoState extends State<BottomSheetPromo> {
   Widget build(BuildContext context) {
     return Column(children: [
       Container(
+        width: Config.xMargin(context, width: 84),
         height: Config.yMargin(context, height: 15),
         padding: EdgeInsets.all(Config.yMargin(context, height: 2)),
         color: Colors.white,
@@ -214,7 +216,7 @@ class ShowBottomPromo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         SizedBox(height: Config.yMargin(context, height: 5)),
         Center(

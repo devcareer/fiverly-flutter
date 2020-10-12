@@ -1,5 +1,5 @@
-import 'package:fixing/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
-import 'package:fixing/features/main/main_page.dart';
+import 'package:fiverly_flutter/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
+import 'package:fiverly_flutter/features/main/main_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_color.dart';
@@ -26,7 +26,6 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: StreamBuilder<NavBarItem>(
         stream: _bottomNavBarBloc.itemStream,
         initialData: _bottomNavBarBloc.defaultItem,
@@ -61,18 +60,16 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
                 icon: Icon(Icons.home),
               ),
               BottomNavigationBarItem(
-                label: 'Shop',
-                icon: Icon(Icons.shopping_cart)
+                  label: 'Shop', icon: Icon(Icons.shopping_cart)),
+              BottomNavigationBarItem(
+                label: 'Settings',
+                icon: Icon(Icons.settings),
               ),
               BottomNavigationBarItem(
                 label: 'Settings',
                 icon: Icon(Icons.settings),
               ),
-               BottomNavigationBarItem(
-                label: 'Settings',
-                icon: Icon(Icons.settings),
-              ),
-               BottomNavigationBarItem(
+              BottomNavigationBarItem(
                 label: 'Settings',
                 icon: Icon(Icons.settings),
               ),
