@@ -1,3 +1,4 @@
+
 import 'package:fixing/features/global/app_color.dart';
 import 'package:fixing/features/global/bottom_navigation/screen/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: BottomNavBarApp(),
+
     );
   }
 }
