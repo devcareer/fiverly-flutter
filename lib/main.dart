@@ -2,6 +2,7 @@
 import 'package:fiverly_flutter/features/global/bottom_navigation/screen/bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
+import 'features/authentication/login.dart';
 import 'features/global/app_color.dart';
 
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         accentColor: AppColor.backgroundColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: BottomNavBarApp(),
+      home: Login(),
 
     );
   }
