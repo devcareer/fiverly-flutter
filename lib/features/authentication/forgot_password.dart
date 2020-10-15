@@ -52,11 +52,9 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         'Please, enter your email address.You will receive',
                         style: fonts2,
                       ),
-<<<<<<< HEAD
                       Text(
                         'a link to create a new password via email',
                         style: fonts2,
-=======
                       validator: (value) => value.isEmpty
                           ? "Not valid email.Should your@email.com"
                           : null,
@@ -77,7 +75,6 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       child: Text(
                         'Send',
                         style: buttonColor,
->>>>>>> 42446394cb5c6a7500796abc8f7109b8b527de6d
                       ),
                     ],
                   ),
