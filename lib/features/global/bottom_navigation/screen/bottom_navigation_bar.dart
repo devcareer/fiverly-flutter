@@ -1,3 +1,4 @@
+
 import 'package:fiverly_flutter/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
 import 'package:fiverly_flutter/features/main/main_page.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
             case NavBarItem.HOME:
               return MainPage();
             case NavBarItem.BAG:
-              return _alertArea();
+              return  _settingsArea();
             case NavBarItem.FAVORITES:
               return _settingsArea();
             case NavBarItem.PROFILE:

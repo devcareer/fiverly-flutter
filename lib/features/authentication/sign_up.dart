@@ -2,6 +2,7 @@ import 'package:fiverly_flutter/features/authentication/sharedresources/shared.d
 import 'package:flutter/material.dart';
 import 'package:flutter_cmoon_icons/flutter_cmoon_icons.dart';
 
+
 class SignUp extends StatefulWidget {
   @override
   _SignUpState createState() => _SignUpState();
