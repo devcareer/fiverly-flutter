@@ -5,15 +5,12 @@ import 'package:fiverly_flutter/features/global/bottom_navigation/screen/bottom_
 import 'package:fiverly_flutter/features/main/main_page.dart';
 import 'package:fiverly_flutter/features/shipping_details/screen/add_shipping_address.dart';
 
+
 import 'package:fiverly_flutter/features/authentication/sharedresources/shared.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_cmoon_icons/flutter_cmoon_icons.dart';
 import 'package:page_transition/page_transition.dart';
-
-
-import 'sharedresources/shared.dart';
-
 
 class Login extends StatefulWidget {
   @override
@@ -166,7 +163,8 @@ class _LoginState extends State<Login> {
                 ],
               ),
             ],
-          )
+
+
         ),
       ),
     );

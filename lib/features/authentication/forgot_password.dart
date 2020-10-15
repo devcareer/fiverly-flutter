@@ -55,6 +55,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       Text(
                         'a link to create a new password via email',
                         style: fonts2,
+
                       validator: (value) => value.isEmpty
                           ? "Not valid email.Should your@email.com"
                           : null,
@@ -75,6 +76,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       child: Text(
                         'Send',
                         style: buttonColor,
+
                       ),
                     ],
                   ),
