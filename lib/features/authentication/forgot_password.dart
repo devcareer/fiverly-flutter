@@ -55,6 +55,28 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                       Text(
                         'a link to create a new password via email',
                         style: fonts2,
+
+                      validator: (value) => value.isEmpty
+                          ? "Not valid email.Should your@email.com"
+                          : null,
+                      onChanged: (value) {
+                        setState(() => email = value);
+                      },
+                    ),
+                  ),
+                  //next field
+                  SizedBox(
+                    height: 55.0,
+                  ),
+                  Container(
+                    width: 340,
+                    decoration: buttonDecoration,
+                    child: FlatButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Send',
+                        style: buttonColor,
+
                       ),
                     ],
                   ),
