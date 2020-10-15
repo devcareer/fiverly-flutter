@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fixing/features/authentication/sharedresources/shared.dart';
 import 'sharedresources/shared.dart';
 
 class ForgotPassword extends StatefulWidget {

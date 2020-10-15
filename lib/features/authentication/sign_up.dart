@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fixing/features/authentication/sharedresources/shared.dart';
 import 'package:flutter_cmoon_icons/flutter_cmoon_icons.dart';
+
+import 'sharedresources/shared.dart';
 class SignUp extends StatefulWidget {
   @override
   _SignUpState createState() => _SignUpState();

@@ -1,5 +1,6 @@
-import 'package:fixing/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
-import 'package:fixing/features/main/main_page.dart';
+
+import 'package:fiverly_flutter/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
+import 'package:fiverly_flutter/features/main/main_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_color.dart';

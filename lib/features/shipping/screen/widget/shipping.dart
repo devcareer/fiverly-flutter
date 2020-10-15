@@ -1,11 +1,12 @@
-import 'package:fixing/features/global/screen_app_bar.dart';
-import 'package:fixing/features/global/app_color.dart';
-import 'package:fixing/features/global/text_style.dart';
-import 'package:fixing/features/global/ui_helper.dart';
-import 'package:fixing/features/global/widget_design.dart';
-import 'package:fixing/features/shipping/screen/add_shipping_address.dart';
+
+import 'package:fiverly_flutter/features/global/app_color.dart';
+import 'package:fiverly_flutter/features/global/screen_app_bar.dart';
+import 'package:fiverly_flutter/features/global/text_style.dart';
+import 'package:fiverly_flutter/features/global/widget_design.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+
+import '../add_shipping_address.dart';
 
 class Shipping extends StatelessWidget {
   @override

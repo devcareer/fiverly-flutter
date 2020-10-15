@@ -1,4 +1,5 @@
- import 'package:fixing/features/global/ui_helper.dart';
+
+import 'package:fiverly_flutter/features/global/ui_helper.dart';
 import 'package:flutter/material.dart';
 
 import 'app_color.dart';
