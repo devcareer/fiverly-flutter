@@ -1,6 +1,9 @@
 
+import 'package:fiverly_flutter/features/carts_order/screen/carts.dart';
+import 'package:fiverly_flutter/features/categories/widget/categories.dart';
 import 'package:fiverly_flutter/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
 import 'package:fiverly_flutter/features/main/main_page.dart';
+import 'package:fiverly_flutter/features/shipping_details/screen/my_profile.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_color.dart';
@@ -35,13 +38,13 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
             case NavBarItem.HOME:
               return MainPage();
             case NavBarItem.BAG:
-              return  _settingsArea();
+              return Carts();
             case NavBarItem.FAVORITES:
               return _settingsArea();
             case NavBarItem.PROFILE:
-              return _settingsArea();
+              return UserProfile();
             case NavBarItem.SHOP:
-              return _settingsArea();
+              return Categories();
           }
         },
       ),
@@ -58,21 +61,23 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
             items: [
               BottomNavigationBarItem(
                 label: 'Home',
-                icon: Icon(Icons.home),
+                icon: Icon(Icons.home_outlined),
               ),
               BottomNavigationBarItem(
-                  label: 'Shop', icon: Icon(Icons.shopping_cart)),
-              BottomNavigationBarItem(
-                label: 'Settings',
-                icon: Icon(Icons.settings),
+                label: 'Shop',
+                icon: Icon(Icons.shopping_cart_outlined)
               ),
               BottomNavigationBarItem(
-                label: 'Settings',
-                icon: Icon(Icons.settings),
+                label: 'Beg',
+                icon: Icon(Icons.shopping_bag_outlined),
               ),
-              BottomNavigationBarItem(
-                label: 'Settings',
-                icon: Icon(Icons.settings),
+               BottomNavigationBarItem(
+                label: 'Favorite',
+                icon: Icon(Icons.favorite_outline),
+              ),
+               BottomNavigationBarItem(
+                label: 'Profile',
+                icon: Icon(Icons.person),
               ),
             ],
           );

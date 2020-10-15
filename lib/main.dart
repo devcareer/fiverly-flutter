@@ -1,14 +1,12 @@
 
-import 'package:fiverly_flutter/features/global/bottom_navigation/screen/bottom_navigation_bar.dart';
-
-import 'package:fiverly_flutter/features/carts_order/screen/carts.dart';
 // import 'package:fiverly_flutter/features/global/app_color.dart';
 import 'package:fiverly_flutter/features/reviews_rating/blocs/review_rating_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 
-import 'features/global/app_color.dart';
+import 'features/authentication/login.dart';
+
 
 
 
@@ -41,7 +39,8 @@ class MyApp extends StatelessWidget {
         // accentColor: AppColor.backgroundColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Carts(),
+      home: Login(),
+
     );
   }
 }

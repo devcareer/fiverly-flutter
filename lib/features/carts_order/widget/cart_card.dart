@@ -54,12 +54,13 @@ class _CartCardState extends State<CartCard> {
             ClipRRect(
               child: widget.index / 2 == 0.0
                   ? Image.asset(
-                      "images/bags.png",
+                      "assets/images/bags.png",
                       width: Config.xMargin(context, width: 25),
                     )
                   : Image.asset(
-                      "images/image.png",
+                      "assets/images/image.png",
                       width: Config.xMargin(context, width: 25),
+                      
                     ),
             ),
             Container(
