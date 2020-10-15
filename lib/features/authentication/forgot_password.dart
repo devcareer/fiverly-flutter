@@ -7,7 +7,6 @@ class ForgotPassword extends StatefulWidget {
 }
 
 class _ForgotPasswordState extends State<ForgotPassword> {
-
   final _formKey = GlobalKey<FormState>();
   String email = '';
   String error = '';
@@ -53,9 +52,32 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                         'Please, enter your email address.You will receive',
                         style: fonts2,
                       ),
+<<<<<<< HEAD
                       Text(
                         'a link to create a new password via email',
                         style: fonts2,
+=======
+                      validator: (value) => value.isEmpty
+                          ? "Not valid email.Should your@email.com"
+                          : null,
+                      onChanged: (value) {
+                        setState(() => email = value);
+                      },
+                    ),
+                  ),
+                  //next field
+                  SizedBox(
+                    height: 55.0,
+                  ),
+                  Container(
+                    width: 340,
+                    decoration: buttonDecoration,
+                    child: FlatButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Send',
+                        style: buttonColor,
+>>>>>>> 42446394cb5c6a7500796abc8f7109b8b527de6d
                       ),
                     ],
                   ),

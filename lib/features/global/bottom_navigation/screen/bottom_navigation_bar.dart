@@ -30,7 +30,6 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: StreamBuilder<NavBarItem>(
         stream: _bottomNavBarBloc.itemStream,
         initialData: _bottomNavBarBloc.defaultItem,

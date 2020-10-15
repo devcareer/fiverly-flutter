@@ -1,5 +1,7 @@
 import 'package:fiverly_flutter/cores/util/config.dart';
+import 'package:fiverly_flutter/cores/util/screen_change.dart';
 import 'package:fiverly_flutter/cores/util/style.dart';
+import 'package:fiverly_flutter/features/shipping_details/screen/order_details.dart';
 import 'package:flutter/material.dart';
 
 class MyOrderCard extends StatelessWidget {
@@ -80,7 +82,7 @@ class MyOrderCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     GestureDetector(
-                      onTap: null,
+                      onTap: () => changeScreen(context, MyOrderDetails()),
                       child: Container(
                         height: Config.yMargin(context, height: 6),
                         width: Config.xMargin(context, width: 30),

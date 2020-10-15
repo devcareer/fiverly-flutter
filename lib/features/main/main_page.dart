@@ -133,7 +133,7 @@ class MainPage extends StatelessWidget {
                     },
                   ),
                 ),
-                 SizedBox(
+                SizedBox(
                   height: 20,
                 ),
                 sectionRow(firstText: "In stock", secondText: "View all"),
