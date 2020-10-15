@@ -31,7 +31,11 @@ class Shipping extends StatelessWidget {
       )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(context, PageTransition(type: PageTransitionType.topToBottom, child: AddShippingAddress()));
+          Navigator.push(
+              context,
+              PageTransition(
+                  type: PageTransitionType.topToBottom,
+                  child: AddShippingAddress()));
         },
         child: Icon(
           Icons.add,
@@ -41,5 +45,4 @@ class Shipping extends StatelessWidget {
       ),
     );
   }
-
 }

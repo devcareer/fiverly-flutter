@@ -27,7 +27,6 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: StreamBuilder<NavBarItem>(
         stream: _bottomNavBarBloc.itemStream,
         initialData: _bottomNavBarBloc.defaultItem,
@@ -62,18 +61,16 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
                 icon: Icon(Icons.home),
               ),
               BottomNavigationBarItem(
-                label: 'Shop',
-                icon: Icon(Icons.shopping_cart)
+                  label: 'Shop', icon: Icon(Icons.shopping_cart)),
+              BottomNavigationBarItem(
+                label: 'Settings',
+                icon: Icon(Icons.settings),
               ),
               BottomNavigationBarItem(
                 label: 'Settings',
                 icon: Icon(Icons.settings),
               ),
-               BottomNavigationBarItem(
-                label: 'Settings',
-                icon: Icon(Icons.settings),
-              ),
-               BottomNavigationBarItem(
+              BottomNavigationBarItem(
                 label: 'Settings',
                 icon: Icon(Icons.settings),
               ),

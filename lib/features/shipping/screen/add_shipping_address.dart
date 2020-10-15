@@ -10,14 +10,14 @@ class AddShippingAddress extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.backgroundColor,
       appBar: screenAppBar(
-         screenIcon: Icon(
+          screenIcon: Icon(
             Icons.chevron_left,
             color: Colors.black,
           ),
           screenTitle: Text(
-        "Adding Shipping Address",
-        style: kTitleStyle,
-      )),
+            "Adding Shipping Address",
+            style: kTitleStyle,
+          )),
       body: SingleChildScrollView(
         child: Container(
             color: AppColor.backgroundColor,
@@ -52,6 +52,4 @@ class AddShippingAddress extends StatelessWidget {
       ),
     );
   }
-
- 
 }

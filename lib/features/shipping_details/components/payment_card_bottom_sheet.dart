@@ -19,9 +19,17 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
         padding:
             EdgeInsets.symmetric(horizontal: Config.xMargin(context, width: 5)),
         height: Config.yMargin(context, height: 80),
-        color: Color(0xffF9F9F9),
+        // color: Color(0xffF9F9F9),
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+          Container(
+            width: Config.xMargin(context, width: 20),
+            height: Config.yMargin(context, height: 1.5),
+            decoration: BoxDecoration(
+                color: Color(0xff9B9B9B),
+                borderRadius:
+                    BorderRadius.circular(Config.xMargin(context, width: 2.5))),
+          ),
           Text(
             "Add new card",
             style: black(
@@ -29,6 +37,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -39,6 +50,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -51,6 +65,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -61,6 +78,9 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
             ),
           ),
           Container(
+            width: Config.xMargin(context, width: 84),
+            padding: EdgeInsets.symmetric(
+                horizontal: Config.xMargin(context, width: 3)),
             height: Config.yMargin(context, height: 10),
             color: Colors.white,
             child: TextField(
@@ -91,6 +111,7 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
           GestureDetector(
             onTap: () => changeScreen(context, ShippingAddress()),
             child: Container(
+              width: Config.xMargin(context, width: 84),
               height: Config.yMargin(context, height: 10),
               decoration: BoxDecoration(
                 color: Colors.red,
@@ -113,13 +134,30 @@ class _PaymentCardBottomSheetState extends State<PaymentCardBottomSheet> {
 void addPaymentCardSheet(BuildContext context) {
   showModalBottomSheet(
       // shape: ShapeBorder(),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(
+            Config.xMargin(context, width: 10),
+          ),
+          topRight: Radius.circular(
+            Config.xMargin(context, width: 10),
+          ),
+        ),
+      ),
       context: context,
       builder: (ccontext) {
         return Container(
           decoration: BoxDecoration(
-              color: Color(0xffE5E5E5),
-              borderRadius:
-                  BorderRadius.circular(Config.xMargin(context, width: 15))),
+            color: Color(0xffE5E5E5),
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(
+                Config.xMargin(context, width: 10),
+              ),
+              topRight: Radius.circular(
+                Config.xMargin(context, width: 10),
+              ),
+            ),
+          ),
           child: SingleChildScrollView(child: PaymentCardBottomSheet()),
         );
       });

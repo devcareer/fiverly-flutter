@@ -30,6 +30,7 @@ dependencies:
   page_transition: ^1.1.7+2
   flutter_bloc: ^6.0.5
   equatable: ^1.2.5
+  multi_image_picker: ^4.7.14
 
 
   flutter_cmoon_icons: ^0.1.0
@@ -58,7 +59,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    # - images
+
     - assets/images/
+    - images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
