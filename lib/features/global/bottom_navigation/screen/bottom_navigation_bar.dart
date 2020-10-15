@@ -1,4 +1,3 @@
-import 'package:fixing/features/favorite/favoriteScreens/favorite_list_screen.dart';
 import 'package:fixing/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
 import 'package:fixing/features/main/main_page.dart';
 import 'package:flutter/material.dart';
