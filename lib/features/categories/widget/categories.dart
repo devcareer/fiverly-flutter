@@ -16,6 +16,7 @@ class _CategoriesState extends State<Categories> {
     return Scaffold(
       backgroundColor: AppColor.backgroundColor,
       appBar: screenAppBar(
+      
           screenTitle: Text(
             "Categories",
             style: kTitleStyle,
@@ -45,10 +46,12 @@ class _CategoriesState extends State<Categories> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          "Shoe",
+                          "Tops",
                           style: kTextWithColorWhite.copyWith(
                             fontSize: 15,
-                              color: Colors.black),
+                              color: Colors.black,
+                              
+                              ),
                         ),
                       ),
                       Divider()

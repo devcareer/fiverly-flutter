@@ -47,6 +47,7 @@ class _CartCardState extends State<CartCard> {
     }
 
     return Card(
+      color: Colors.white,
       child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
@@ -56,10 +57,13 @@ class _CartCardState extends State<CartCard> {
                   ? Image.asset(
                       "assets/images/bags.png",
                       width: Config.xMargin(context, width: 25),
+                      
                     )
                   : Image.asset(
                       "assets/images/image.png",
                       width: Config.xMargin(context, width: 25),
+                      fit: BoxFit.fitHeight,
+                      height: 125,
                       
                     ),
             ),
