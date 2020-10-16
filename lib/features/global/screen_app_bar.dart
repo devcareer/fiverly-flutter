@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 AppBar screenAppBar({Widget screenTitle, screenIcon}) {
 
   return AppBar(
+    automaticallyImplyLeading: false,
     title: screenTitle,
     leading: screenIcon,
     centerTitle: true,

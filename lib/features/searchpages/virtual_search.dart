@@ -1,3 +1,4 @@
+import 'package:fiverly_flutter/features/searchpages/taking_photo.dart';
 import 'package:flutter/material.dart';
 import '../authentication/sharedresources/shared.dart';
 
@@ -39,7 +40,9 @@ class _VirtualSearchState extends State<VirtualSearch> {
                         Container(
                       width: 340,
                       decoration: buttonDecoration,
-                      child: FlatButton(onPressed:(){}, 
+                      child: FlatButton(onPressed:(){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => TakingPhoto()));
+                      }, 
                       child:Text('TAKE A PHOTO', style: buttonColor,),),
                     ),
                     SizedBox(height: 20.0,),

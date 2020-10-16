@@ -236,6 +236,27 @@ class MainPage extends StatelessWidget {
         ));
   }
 
+
+
+}
+  Padding tag(BuildContext context, color, text, textColor) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 10.0, left: 8.0),
+      child: Container(
+        width: 55,
+        height: screenHeight(context) / 25,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100), color: color),
+        child: Text(
+          text,
+          style: kTextWithColorWhite.copyWith(fontSize: 14, color: textColor),
+        ),
+      ),
+    );
+  }
+
+
   storeSection({Center center, BuildContext context, color, text, textColor}) {
     return Container(
       height: 350,
@@ -377,21 +398,3 @@ class MainPage extends StatelessWidget {
       ),
     );
   }
-
-  Padding tag(BuildContext context, color, text, textColor) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 10.0, left: 8.0),
-      child: Container(
-        width: 55,
-        height: screenHeight(context) / 25,
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100), color: color),
-        child: Text(
-          text,
-          style: kTextWithColorWhite.copyWith(fontSize: 14, color: textColor),
-        ),
-      ),
-    );
-  }
-}

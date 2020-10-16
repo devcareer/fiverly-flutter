@@ -3,6 +3,7 @@ import 'package:fiverly_flutter/features/carts_order/screen/carts.dart';
 import 'package:fiverly_flutter/features/categories/widget/categories.dart';
 import 'package:fiverly_flutter/features/global/bottom_navigation/bloc/bottom_navigation_bar_bloc.dart';
 import 'package:fiverly_flutter/features/main/main_page.dart';
+import 'package:fiverly_flutter/features/products/screen/main_view.dart';
 import 'package:fiverly_flutter/features/shipping_details/screen/my_profile.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +41,7 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
             case NavBarItem.BAG:
               return Carts();
             case NavBarItem.FAVORITES:
-              return _settingsArea();
+              return ProductsView();
             case NavBarItem.PROFILE:
               return UserProfile();
             case NavBarItem.SHOP:
