@@ -4,6 +4,7 @@ import 'package:fiverly_flutter/features/reviews_rating/blocs/review_rating_bloc
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'features/categories/blocs/categories_bloc.dart';
 import 'features/shipping_details/bloc/my_order_counter_bloc.dart';
 
 void main() async {
@@ -15,11 +16,15 @@ void main() async {
       BlocProvider<ReviewRatingBloc>(
         create: (context) => ReviewRatingBloc(),
       ),
+      BlocProvider<LayoutBloc>(
+        create: (context) => LayoutBloc(),
+      ),
     ],
     child: MyApp(),
   ));
 }
 
+// LayoutBloc
 // ReviewRatingBloc
 class MyApp extends StatelessWidget {
   @override

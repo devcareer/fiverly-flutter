@@ -37,7 +37,7 @@ class _CartsState extends State<Carts> {
               child: ListView.separated(
                 separatorBuilder: (context, index) {
                   return Container(
-                    height: Config.yMargin(context, height: 3),
+                    height: Config.yMargin(context, height: 1),
                   );
                 },
                 itemCount: carts.length,
