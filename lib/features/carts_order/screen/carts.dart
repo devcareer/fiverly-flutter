@@ -20,21 +20,26 @@ class _CartsState extends State<Carts> {
       backgroundColor: Color(0xffE5E5E5),
       body: SingleChildScrollView(
         child: SafeArea(
-                  child: Column(
+          child: Column(
             children: [
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+                  margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("My Bag",style: kTitleStyle.copyWith(fontSize: 25),),
-                  GestureDetector(
-                    onTap: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => CheckOutPage())),
-                    child: Icon(Icons.arrow_forward),
-                  )
-                ],
-              )),
+                    children: [
+                      Text(
+                        "My Bag",
+                        style: kTitleStyle.copyWith(fontSize: 25),
+                      ),
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CheckOutPage())),
+                        child: Icon(Icons.arrow_forward),
+                      )
+                    ],
+                  )),
               Container(
                 height: Config.yMargin(context, height: 160),
                 margin: EdgeInsets.symmetric(vertical: 15),

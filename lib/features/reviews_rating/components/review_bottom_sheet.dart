@@ -1,6 +1,7 @@
 import 'package:fiverly_flutter/cores/util/config.dart';
 import 'package:fiverly_flutter/cores/util/screen_change.dart';
 import 'package:fiverly_flutter/cores/util/style.dart';
+import 'package:fiverly_flutter/features/categories/screen/categories.dart';
 import 'package:fiverly_flutter/features/reviews_rating/screen/rating_reviews.dart';
 import 'package:flutter/material.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
@@ -168,7 +169,7 @@ class _PersonalSettingBottomSheetState
                     )),
                 SizedBox(height: Config.yMargin(context, height: 3.5)),
                 GestureDetector(
-                  onTap: () => changeScreen(context, RatingReviews()),
+                  onTap: () => changeScreen(context, CategorySection()),
                   child: Container(
                     height: Config.yMargin(context, height: 10),
                     decoration: BoxDecoration(

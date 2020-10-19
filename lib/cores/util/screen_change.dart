@@ -8,3 +8,7 @@ void changeScreenReplacement(BuildContext context, Widget widget) {
   Navigator.pushReplacement(
       context, MaterialPageRoute(builder: (context) => widget));
 }
+
+void goBack(BuildContext context) {
+  Navigator.pop(context);
+}
