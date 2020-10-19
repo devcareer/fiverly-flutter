@@ -1,0 +1,5 @@
+flutter_native_splash:
+  image: assets/images/online_shopping_seamless_pattern_6821036.jpg
+  color: "42a5f5"
+  fill: true
+  android_disable_fullscreen: true
