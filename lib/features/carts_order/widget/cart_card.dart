@@ -46,7 +46,6 @@ class _CartCardState extends State<CartCard> {
           });
     }
 
-<<<<<<< HEAD
     return Container(
       padding:
           EdgeInsets.symmetric(horizontal: Config.xMargin(context, width: 1)),
@@ -115,67 +114,6 @@ class _CartCardState extends State<CartCard> {
                             ),
                             SizedBox(
                               width: Config.xMargin(context, width: 3.0),
-=======
-    return Card(
-      color: Colors.white,
-      child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ClipRRect(
-              child: widget.index / 2 == 0.0
-                  ? Image.asset(
-                      "assets/images/bags.png",
-                      width: Config.xMargin(context, width: 25),
-                      
-                    )
-                  : Image.asset(
-                      "assets/images/image.png",
-                      width: Config.xMargin(context, width: 25),
-                      fit: BoxFit.fitHeight,
-                      height: 125,
-                      
-                    ),
-            ),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 5),
-              width: Config.xMargin(context, width: 65),
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Sport Dress",
-                            style: TextStyle(
-                                fontSize: Config.xMargin(context, width: 4),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          // Icon(
-                          GestureDetector(
-                            child: Icon(Icons.more_vert),
-                            onTap: () {
-                              _showDialog();
-                            },
-                          ),
-                        ]),
-                    Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          RichText(
-                            text: TextSpan(
-                              text: 'Color : ',
-                              style: DefaultTextStyle.of(context).style,
-                              children: <TextSpan>[
-                                TextSpan(
-                                  text: 'Gray',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
-                              ],
->>>>>>> d87cc2e5020e11230f2240417fafd25c8a780152
                             ),
                             RichText(
                               text: TextSpan(
